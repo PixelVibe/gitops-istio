@@ -55,7 +55,8 @@ helmOperator:
         username: ""
 EOF
 
-helm repo add weaveworks https://weaveworks.github.io/flux
+# helm repo add weaveworks https://weaveworks.github.io/flux
+helm repo add weaveworks https://fluxcd.github.io/flux/
 
 echo ">>> Installing Flux for ${REPO_URL}"
 helm upgrade -i flux --wait \
